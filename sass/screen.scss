@@ -1,6 +1,32 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-
 @import "compass/reset";
+@import "compass";
+@import "compass/css3";
+@import "susy";
+
+@import "_layout";
+
+#center {
+  position: relative;
+}
+
+#toggle-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#toggle-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#map {
+  height: 100%;
+}
+
+#left, #right {
+  position: relative;
+  z-index: 20;
+  @include box-shadow(0 0 10px #555555);
+}
