@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.danielbeeke.build-a-locator"
+        version   = "0.0.1">
+
+    <name>Build a Locator</name>
+
+    <description>
+        Prototype for the local event mapping software.
+    </description>
+
+    <author href="http://danielbeeke.nl" email="daniel.beeke@gmail.com">
+        Daniel Beeke
+    </author>
+
+</widget>
