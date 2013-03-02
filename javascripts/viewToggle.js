@@ -1,17 +1,17 @@
 (function ($) {
 
   $.fn.behaviours.viewToggle = {
-    attach: function (settings) {
+    attach: function (context, settings) {
 
       // Click handlers
-      $("#toggle-left").click(function() {
+      $("#toggle-left", context).once().click(function() {
         $('body').toggleClass('show-left').removeClass('show-right');
         $('#toggle-left').toggleClass('active');
         $('#toggle-right').removeClass('active');
         return false;
       });
 
-      $("#toggle-right").click(function() {
+      $("#toggle-right", context).once().click(function() {
         $('body').toggleClass('show-right').removeClass('show-left');
         $('#toggle-right').toggleClass('active');
         $('#toggle-left').removeClass('active');

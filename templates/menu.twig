@@ -1,0 +1,5 @@
+<div class="btn-group btn-group-vertical">
+  {% for link in links %}
+    <a href="{{ link.href }}" class="btn"><i class="icon-{{link.icon }}"></i>{{ link.title }}</a>
+  {% endfor %}
+</div>

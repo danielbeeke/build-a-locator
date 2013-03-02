@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link href="/assets/bootstrap/css/bootstrap.min.css" media="screen, projection" rel="stylesheet" type="text/css" />
-  <link href="/assets/bootstrap/css/bootstrap-responsive.min.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <!-- Libraries -->
+  <link href="/assets/leaflet/leaflet.css" rel="stylesheet" type="text/css" />
+
+  <!-- Stylesheets -->
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
-  <link href="/assets/leaflet/leaflet.css" rel="stylesheet" type="text/css" />
   <!--[if lte IE 8]>
     <link rel="stylesheet" href="assets/leaflet/leaflet.ie.css" />
   <![endif]-->
@@ -19,7 +20,10 @@
 
   <div class="container">
     <div id="left">
-      left
+      <div class="search-wrapper">
+        <input id="search" autocomplete="off" placeholder="Search..." type="text">
+      </div>
+      <div id="menu"></div>
     </div>
 
     <div id="center">
@@ -36,14 +40,18 @@
 
   <!-- Libraries -->
   <script src="/assets/jquery/jquery-1.9.1.min.js"></script>
+  <script src="/assets/once/jquery.once.js"></script>
   <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="/assets/quo/quo.js"></script>
+  <script src="/assets/twigjs/twig.min.js"></script>
   <script src="/assets/leaflet/leaflet.js"></script>
 
   <!-- Modules -->
   <script src="/javascripts/main.js"></script>
   <script src="/javascripts/body.js"></script>
   <script src="/javascripts/viewToggle.js"></script>
-  <script src="/javascripts/map.js"></script>
+  <!--<script src="/javascripts/map.js"></script>-->
+  <script src="/javascripts/menu.js"></script>
+
 </body>
 </html>

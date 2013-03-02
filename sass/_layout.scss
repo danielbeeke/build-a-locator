@@ -1,7 +1,3 @@
-@import "compass";
-@import "compass/reset";
-@import "susy";
-
 // --------------------------------------------
 // settings
 
@@ -85,8 +81,8 @@ $side : $medium-columns - $main;
 // --------------------------------------------
 // large
 
-$main : 6;
-$side : ($large-columns - $main)/2;
+$main : 8;
+$side : ($large-columns - $main) / 2;
 
 @include at-breakpoint($large-columns) {
   [href="#right"] { visibility: hidden; }

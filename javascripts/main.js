@@ -3,14 +3,21 @@
  * Works a lot like Drupal.behaviours
  **/
 
-$.fn.behaviours = {};
+(function ($) {
 
-$(document).ready(function() {
+  $.fn.behaviours = {};
 
-  var settings = [];
+  $(document).ready(function() {
 
-  $.each($.fn.behaviours, function() {
-    this.attach(settings);
+    $.fn.attachBehaviours = function (context) {
+      var settings = [];
+
+      $.each($.fn.behaviours, function() {
+        this.attach(context, settings);
+      });
+    }
+
+    $.fn.attachBehaviours(document);
   });
 
-});
+})(jQuery);

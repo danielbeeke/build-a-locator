@@ -1,9 +1,9 @@
 (function ($) {
 
   $.fn.behaviours.body = {
-    attach: function (settings) {
+    attach: function (context, settings) {
 
-      $(window).resize(function() {
+      $(window).once().resize(function() {
         if ($(window).width() > 975) {
             $('body').removeClass('window-size-small').removeClass('window-size-medium').addClass('window-size-big');
         } else if ($(window).width() <= 975 && $(window).width() > 655) {

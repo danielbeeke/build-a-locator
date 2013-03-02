@@ -1,4 +1,6 @@
 require 'susy'
+require 'compass_twitter_bootstrap'
+
 # Require any additional compass plugins here.
 
 
